@@ -36,9 +36,9 @@ namespace MyTriangle
             return (angle);
         }
 
-        public int Perimeter(int sideA, int sideB, int SideC)
+        public int Perimeter(int sideA, int sideB, int sideC)
         {
-            return (-1);
+            return (sideA + sideB + sideC);
         }
     }
 }
