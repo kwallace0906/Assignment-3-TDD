@@ -37,7 +37,16 @@ namespace MyTriangle.Tests
             int perimeter = triangle.Perimeter(3, 4, 5);
             Assert.AreEqual(12, perimeter);
         }
+
+        [TestMethod]
+        public void checkIsRightSimple()
+        {
+            var triangle = new Triangle();
+            int isRight = triangle.CheckIsRight(30, 90, 60);
+            Assert.AreEqual(0, isRight);
+        }
     }
+
 
    
 }
