@@ -28,5 +28,9 @@ namespace MyTriangle
             return (area);
         }
 
+        public double MissingAngle(int angleA, int angleB)
+        {
+            return (1);
+        }
     }
 }
