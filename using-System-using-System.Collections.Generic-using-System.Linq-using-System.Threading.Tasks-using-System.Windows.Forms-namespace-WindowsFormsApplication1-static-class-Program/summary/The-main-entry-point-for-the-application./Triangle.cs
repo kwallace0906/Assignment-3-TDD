@@ -60,5 +60,10 @@ namespace MyTriangle
                 return (0);
             }
         }
+
+        public int isValidTriangle(int angleA, int angleB, int angleC)  //returns 1 if valid triangle (adds to 180), 0 if is not valid
+        {
+            return (5);
+        }
     }
 }
