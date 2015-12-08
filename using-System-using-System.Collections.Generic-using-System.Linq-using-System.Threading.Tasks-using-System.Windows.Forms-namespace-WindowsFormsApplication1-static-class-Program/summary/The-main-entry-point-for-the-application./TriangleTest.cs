@@ -43,7 +43,7 @@ namespace MyTriangle.Tests
         {
             var triangle = new Triangle();
             int isRight = triangle.CheckIsRight(30, 90, 60);
-            Assert.AreEqual(0, isRight);
+            Assert.AreEqual(1, isRight);
         }
     }
 
