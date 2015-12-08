@@ -8,7 +8,7 @@ namespace MyTriangle
 {
     public class Triangle
     {
-        public double Hypotenuse(int sideA, int sideB)
+        public double RightHypotenuse(int sideA, int sideB)
         {
             double sideC;
             int temp; 
@@ -21,7 +21,7 @@ namespace MyTriangle
 
         }
 
-        public double Area(int sideA, int sideB)
+        public double RightArea(int sideA, int sideB)
         {
             double area = 0.0;
             area = 0.5 * (sideA * sideB);
