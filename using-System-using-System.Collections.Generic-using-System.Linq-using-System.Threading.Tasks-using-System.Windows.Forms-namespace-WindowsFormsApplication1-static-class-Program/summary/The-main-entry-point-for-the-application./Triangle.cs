@@ -21,5 +21,11 @@ namespace MyTriangle
 
         }
 
+        public double Area(int sideA, int sideB)
+        {
+
+            return (0);
+        }
+
     }
 }
