@@ -28,9 +28,12 @@ namespace MyTriangle
             return (area);
         }
 
-        public double MissingAngle(int angleA, int angleB)
+        public int MissingAngle(int angleA, int angleB)
         {
-            return (1);
+            int angle = 0;
+            angle = 180 - (angleA + angleB);
+
+            return (angle);
         }
     }
 }
