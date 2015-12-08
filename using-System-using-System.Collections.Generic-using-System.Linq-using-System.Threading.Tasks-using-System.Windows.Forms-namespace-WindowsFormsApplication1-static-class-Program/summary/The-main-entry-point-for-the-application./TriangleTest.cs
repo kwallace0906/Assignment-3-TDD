@@ -1,32 +1,30 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MyTriangle;
 
-namespace MyTriangle
+namespace MyTriangle.Tests
 {
-    public class Triangle
+    [TestClass]
+    public class TriangleTests
     {
-        public double RightHypotenuse(int sideA, int sideB)
+        [TestMethod]
+        public void RightHypotenuseSimple()
         {
-            double sideC;
-            int temp; 
-            sideA = sideA * sideA;
-            sideB = sideB * sideB;
-            temp = sideB + sideA;
-            sideC = Math.Sqrt(temp);
-            Console.Write(sideC);
-            return (sideC);
-
+            var triangle = new Triangle();
+            double hypot = triangle.RightHypotenuse(3, 4);
+            Assert.AreEqual(5, hypot);
         }
 
-        public double RightArea(int sideA, int sideB)
+        [TestMethod]
+        public void RightAreaSimple()
         {
-            double area = 0.0;
-            area = 0.5 * (sideA * sideB);
-            return (area);
+            var triangle = new Triangle();
+            double area = triangle.RightArea(4, 5);
+            Assert.AreEqual(10, area);
         }
 
+        
     }
+
+   
 }
