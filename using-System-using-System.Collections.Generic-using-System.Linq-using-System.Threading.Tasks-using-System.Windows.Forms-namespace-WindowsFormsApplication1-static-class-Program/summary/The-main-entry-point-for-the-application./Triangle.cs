@@ -40,5 +40,10 @@ namespace MyTriangle
         {
             return (sideA + sideB + sideC);
         }
+
+        public int CheckIsRight(int angleA, int angleB, int angleC)
+        {
+            return (90);
+        }
     }
 }
