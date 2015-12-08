@@ -11,8 +11,8 @@ namespace MyTriangle.Tests
         public void HypotenuseSimple()
         {
             var triangle = new Triangle();
-            double hypot = triangle.Hypotenuse(4, 5);
-            Assert.AreEqual(0, hypot);
+            double hypot = triangle.Hypotenuse(3, 4);
+            Assert.AreEqual(5, hypot);
         }
     }
 }
