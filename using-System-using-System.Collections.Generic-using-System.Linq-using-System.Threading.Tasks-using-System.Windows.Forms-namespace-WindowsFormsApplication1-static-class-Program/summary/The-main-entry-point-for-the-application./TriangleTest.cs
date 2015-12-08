@@ -14,5 +14,15 @@ namespace MyTriangle.Tests
             double hypot = triangle.Hypotenuse(3, 4);
             Assert.AreEqual(5, hypot);
         }
+
+        [TestMethod]
+        public void AreaSimple()
+        {
+            var triangle = new Triangle();
+            double area = triangle.Area(4, 5);
+            Assert.AreEqual(12, area);
+        }
     }
+
+   
 }
