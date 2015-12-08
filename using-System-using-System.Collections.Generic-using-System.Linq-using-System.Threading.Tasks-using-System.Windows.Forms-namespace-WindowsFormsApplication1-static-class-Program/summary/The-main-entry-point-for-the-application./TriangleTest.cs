@@ -30,6 +30,13 @@ namespace MyTriangle.Tests
             Assert.AreEqual(80, angle);
         }
         
+        [TestMethod]
+        public void PerimeterSimple()
+        {
+            var triangle = new Triangle();
+            int perimeter = triangle.Perimeter(3, 4, 5);
+            Assert.AreEqual(3, perimeter);
+        }
     }
 
    
