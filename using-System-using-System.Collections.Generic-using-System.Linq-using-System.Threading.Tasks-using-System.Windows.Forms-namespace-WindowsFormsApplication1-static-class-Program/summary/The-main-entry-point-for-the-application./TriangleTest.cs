@@ -22,7 +22,13 @@ namespace MyTriangle.Tests
             double area = triangle.RightArea(4, 5);
             Assert.AreEqual(10, area);
         }
-
+        [TestMethod]
+        public void MissingAngleSimple()
+        {
+            var triangle = new Triangle();
+            double angle = triangle.MissingAngle(41, 32);
+            Assert.AreEqual(54, angle);
+        }
         
     }
 
