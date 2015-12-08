@@ -26,8 +26,8 @@ namespace MyTriangle.Tests
         public void MissingAngleSimple()
         {
             var triangle = new Triangle();
-            double angle = triangle.MissingAngle(41, 32);
-            Assert.AreEqual(54, angle);
+            double angle = triangle.MissingAngle(70, 30);
+            Assert.AreEqual(80, angle);
         }
         
     }
