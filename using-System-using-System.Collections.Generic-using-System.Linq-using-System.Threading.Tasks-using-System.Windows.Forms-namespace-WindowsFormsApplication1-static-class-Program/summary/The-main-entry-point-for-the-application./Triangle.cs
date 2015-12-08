@@ -1,44 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace MyTriangle
 {
-    static class Program
+    public class Triangle
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
-    }
-
-    class Triangle
-    {
-        int sideA = 0;
-        int sideB = 0;
-        double sideC = 0;
-
-        int angleA = 0;
-        int angleB = 0;
-        int angleC = 0;
-
         public double Hypotenuse(int sideA, int sideB)
         {
-            sideC = (sideA ^ 2) + (sideB ^ 2);
-            sideC = Math.Sqrt(sideC);
+            double sideC;
+            int temp; 
+            sideA = sideA * sideA;
+            sideB = sideB * sideB;
+            temp = sideB + sideA;
+            sideC = Math.Sqrt(temp);
+            Console.Write(sideC);
             return (sideC);
+
         }
 
-
     }
-
-
 }
