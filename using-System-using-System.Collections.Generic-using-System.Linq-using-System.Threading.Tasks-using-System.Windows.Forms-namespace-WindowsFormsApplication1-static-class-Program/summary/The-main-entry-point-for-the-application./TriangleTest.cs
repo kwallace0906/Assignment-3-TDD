@@ -45,6 +45,14 @@ namespace MyTriangle.Tests
             int isRight = triangle.CheckIsRight(30, 90, 60);
             Assert.AreEqual(1, isRight);
         }
+
+        [TestMethod]
+        public void isValidTriangleSimple()
+        {
+            var triangle = new Triangle();
+            int isValid = triangle.isValidTriangle(70, 80, 90);
+            Assert.AreEqual(1, isValid);
+        }
     }
 
 
