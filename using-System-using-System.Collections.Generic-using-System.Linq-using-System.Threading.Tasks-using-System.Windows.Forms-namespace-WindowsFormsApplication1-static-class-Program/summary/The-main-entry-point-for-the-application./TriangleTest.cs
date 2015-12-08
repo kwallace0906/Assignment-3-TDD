@@ -50,7 +50,7 @@ namespace MyTriangle.Tests
         public void isValidTriangleSimple()
         {
             var triangle = new Triangle();
-            int isValid = triangle.isValidTriangle(70, 80, 90);
+            int isValid = triangle.isValidTriangle(70, 30, 80);
             Assert.AreEqual(1, isValid);
         }
     }
