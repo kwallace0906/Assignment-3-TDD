@@ -41,9 +41,24 @@ namespace MyTriangle
             return (sideA + sideB + sideC);
         }
 
-        public int CheckIsRight(int angleA, int angleB, int angleC)
+        public int CheckIsRight(int angleA, int angleB, int angleC) //returns 1 if any angle is 90, 0 if no angles are 90
         {
-            return (90);
+            if(angleA == 90)
+            {
+                return (1);
+            }
+            else if(angleB == 90)
+            {
+                return (1);
+            }
+            else if(angleC == 90)
+            {
+                return (1);
+            }
+            else
+            {
+                return (0);
+            }
         }
     }
 }
