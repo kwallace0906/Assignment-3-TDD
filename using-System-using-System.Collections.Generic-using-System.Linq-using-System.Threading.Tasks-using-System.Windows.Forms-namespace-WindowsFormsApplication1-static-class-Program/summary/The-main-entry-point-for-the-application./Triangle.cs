@@ -23,8 +23,9 @@ namespace MyTriangle
 
         public double Area(int sideA, int sideB)
         {
-
-            return (0);
+            double area = 0.0;
+            area = 0.5 * (sideA * sideB);
+            return (area);
         }
 
     }
